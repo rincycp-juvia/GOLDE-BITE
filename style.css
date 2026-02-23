@@ -1,7 +1,198 @@
-.main-image {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.login-page {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to top, rgba(88, 28, 135, 0.7), rgba(30, 27, 75, 0.7)),
+                url('https://images.unsplash.com/photo-1506744038136-46273834b3fb');
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-box {
+    width: 350px;
+    padding: 40px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 20px rgba(168, 85, 247, 0.8);
+    color: #fff;
+}
+
+.login-box h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+}
+
+.input-box {
+    margin-bottom: 20px;
+}
+
+.input-box label {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 90vw;
-    height: 80vh;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 25px;
+    border: 1px solid #ccc;
+    outline: none;
+    background: transparent;
+    color: #fff;
+}
+
+.input-box input::placeholder {
+    color: #ddd;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+.options a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.options a:hover {
+    text-decoration: underline;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 25px;
+    background: #9333ea;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #7e22ce;
+}
+/* ======================= */
+/* FOODLOVER CLEAN VERSION */
+/* ======================= */
+
+.fl-page {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f3efec;
+}
+
+/* NAVBAR */
+.fl-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 8%;
+}
+
+.fl-logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+}
+
+.fl-nav {
+    display: flex;
+    gap: 30px;
+}
+
+.fl-nav a {
+    text-decoration: none;
+    color: #555;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.fl-nav a:hover {
+    color: #ff4d1c;
+}
+
+/* HERO */
+.fl-hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 8%;
+}
+
+/* TEXT */
+.fl-hero-text {
+    max-width: 500px;
+}
+
+.fl-hero-text h1 {
+    font-size: 60px;
+    line-height: 1.2;
+    color: #333;
+    font-weight: 500;
+}
+
+.fl-btn {
+    margin-top: 30px;
+    padding: 15px 40px;
+    border: none;
+    background: #ff4d1c;
+    color: white;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.fl-btn:hover {
+    background: #e84314;
+}
+
+/* IMAGE SIDE */
+.fl-hero-image {
+    position: relative;
+    width: 480px;
+    height: 480px;
+}
+
+/* ORANGE CIRCLE */
+.fl-circle {
+    width: 100%;
+    height: 100%;
+    background: #ff4d1c;
+    border-radius: 50%;
+}
+
+/* IMAGE CENTERED */
+.fl-hero-image img {
+    position: absolute;
+    width: 70%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
 }
